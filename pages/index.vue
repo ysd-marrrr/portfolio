@@ -1,68 +1,154 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        portfolio
-      </h1>
-      <h2 class="subtitle">
-        My prime portfolio site.
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <section class="hero is-fullheight has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-narow">
+              <img
+                class="profile-image"
+                src="~assets/profile.jpg"
+                alt="profile photo"
+              />
+            </div>
+          </div>
+          <div class="columns is-mobile is-vcentered is-centered">
+            <div class="column is-narrow">
+              <h1 class="title">
+                Masataka Yoshida
+              </h1>
+            </div>
+            <div class="column is-narrow">
+              <p>y-mix (yoshida mix)</p>
+            </div>
+          </div>
+          <h2 class="subtitle">
+            Web-Frontend, Infrastructure (,Backend) Engineer
+          </h2>
+        </div>
       </div>
-    </div>
+    </section>
+    <section class="hero is-success is-fullheight has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Skills
+          </h1>
+
+          <div class="columns">
+            <div class="column">
+              <h3 class="skill-header">Web-Frontend</h3>
+              <ul>
+                <li>Vue/Nuxt/Vuex</li>
+                <li>HTML/CSS(SCSS)</li>
+                <li>ECMAScript 6</li>
+                <li>Node.js/npm scripts</li>
+                <li>Webpack</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h3 class="skill-header">Infrastructure</h3>
+              <ul>
+                <li>
+                  AWS(EC2, VPC, ECS, ECR, Route53, SES, Lambda, Kinesis, S3,
+                  CloudFront, API Gateway, Batch, Glue, Athena)
+                </li>
+                <li>Firebase</li>
+                <li>Windows</li>
+                <li>Linux</li>
+                <li>macOS</li>
+                <li>Vagrant</li>
+                <li>Docker</li>
+              </ul>
+            </div>
+            <div class="column">
+              <h3 class="skill-header">Others</h3>
+              <ul>
+                <li>Python</li>
+                <li>Elastic Stack(Elasticsearch, Logstash)</li>
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>PHP</li>
+                <li>CakePHP</li>
+              </ul>
+              Speaker Deck
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-info is-fullheight has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Vision / Motto
+          </h1>
+          <h2 class="subtitle subtitle-en">
+            I wish everyone's happiness with my contribution.
+          </h2>
+          <h2 class="subtitle subtitle-jp">自分のチカラでみんなを幸せに</h2>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-fullheight has-text-centered">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            Links
+          </h1>
+
+          <div class="columns is-centered is-multiline">
+            <div class="column is-narrow">
+              <a href="https://twitter.com/bwolftech">Twitter</a>
+            </div>
+            <div class="column is-narrow">
+              <a href="https://github.com/ysd-marrrr">GitHub</a>
+            </div>
+            <div class="column is-narrow">
+              <a href="https://qiita.com/ysd_marrrr">Qiita</a>
+            </div>
+            <div class="column is-narrow">
+              <a href="https://speakerdeck.com/ysd_marrrr">Speaker Deck</a>
+            </div>
+            <div class="column is-narrow">
+              <a href="https://y-mix.hateblo.jp/">Blog</a>
+            </div>
+            <div class="column is-narrow">
+              <a href="https://tech.opst.co.jp/author/yoshida.m/"
+                >TECH4ALL<br />(Corporate Blog)</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
+export default {}
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style lang="scss" scoped>
+h1.title {
+  font-size: 200%;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+h3.skill-header {
+  font-weight: bold;
+  font-size: 150%;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: skyblue; /*背景色*/
 }
 
-.links {
-  padding-top: 15px;
+.profile-image {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
 }
 </style>
