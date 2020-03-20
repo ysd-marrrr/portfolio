@@ -9,7 +9,9 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "storybook": "start-storybook -p 9000",
+    "build-storybook": "build-storybook"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint"
@@ -25,14 +27,22 @@
     "@fortawesome/vue-fontawesome": "^0.1.9",
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/bulma": "^1.2.1",
+    "core-js": "2.6.9",
     "minimist": "^1.2.5",
     "nuxt": "^2.0.0",
     "nuxt-fontawesome": "^0.4.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.7",
     "@nuxtjs/eslint-config": "^2.0.2",
     "@nuxtjs/eslint-module": "^1.0.0",
+    "@storybook/addon-actions": "^5.3.17",
+    "@storybook/addon-links": "^5.3.17",
+    "@storybook/addons": "^5.3.17",
+    "@storybook/vue": "^5.3.17",
     "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
+    "babel-preset-vue": "^2.0.2",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-nuxt": ">=0.4.2",
@@ -42,6 +52,7 @@
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.0",
     "prettier": "^1.16.4",
-    "sass-loader": "^8.0.0"
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.1.3"
   }
 }
