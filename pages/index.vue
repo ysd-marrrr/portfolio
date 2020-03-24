@@ -32,9 +32,9 @@
     <section class="hero is-info is-fullheight has-text-centered">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">
+          <h2 class="section-title">
             Vision / Motto
-          </h1>
+          </h2>
           <h2 class="subtitle subtitle-en">
             I wish everyone's happiness with my contribution.
           </h2>
@@ -45,9 +45,9 @@
     <section class="hero is-fullheight has-text-centered">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">
+          <h2 class="section-title">
             Links
-          </h1>
+          </h2>
 
           <div class="columns is-centered is-multiline">
             <div class="column is-narrow">
@@ -87,10 +87,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1.title {
-  font-size: 200%;
-}
-
 h3.skill-header {
   font-weight: bold;
   font-size: 150%;

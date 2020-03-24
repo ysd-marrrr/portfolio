@@ -2,7 +2,7 @@
   <section class="hero is-success has-text-centered">
     <div class="hero-body">
       <div class="container">
-        <h2 class="sub-title">
+        <h2 class="section-title">
           Skills
         </h2>
         <div class="columns is-vcentered">
