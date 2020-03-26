@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
 
+// 各セクション領域の大きさ
+.profile-section {
+  padding: 10rem 1.5rem;
+
+  &.is-fullheight{
+    min-height: 100vh;
+  }
+}
+
 // 各セクションのタイトル
 h2.section-title {
   font-family: 'Abel', sans-serif;
