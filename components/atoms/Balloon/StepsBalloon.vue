@@ -9,13 +9,18 @@ export default {
   props: {
     backgroundColorProp: {
       type: String,
-      default: 'orange'
+      default: '#DAE477'
+    },
+    textColorProp: {
+      type: String,
+      default: 'black'
     }
   },
   computed: {
     balloonStyle() {
       return {
-        '--background-color': this.backgroundColorProp
+        '--background-color': this.backgroundColorProp,
+        '--text-color': this.textColorProp
       }
     }
   }
@@ -26,15 +31,18 @@ export default {
 .steps-balloon {
   position: relative;
   text-align: center;
-  margin-bottom: 1rem;
 
+  margin-bottom: 1rem;
   padding: 0.5rem;
+
+  --text-color: white;
+  color: var(--text-color);
 
   --background-color: blue;
   border-radius: 5px;
   background-color: var(--background-color);
 
-  box-shadow: 0px 10px 30px 3px gray;
+  box-shadow: 0px 10px 30px 3px rgba($color: #000000, $alpha: 0.7);
 
   &:not(:last-child) {
     margin-bottom: 2rem;

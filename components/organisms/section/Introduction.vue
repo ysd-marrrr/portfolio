@@ -1,5 +1,5 @@
 <template>
-  <section class="hero is-success has-text-centered">
+  <section class="hero is-success has-text-centered section-introduction">
     <div class="hero-body">
       <div class="container">
         <h2 class="section-title">
@@ -60,8 +60,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section.hero {
-  height: auto;
+section.section-introduction {
+  background-color: #0e376f;
 }
 
 h3 {
