@@ -1,46 +1,44 @@
 <template>
-  <section class="hero is-success has-text-centered section-introduction">
+  <section id="introduction" class="hero has-text-centered">
     <div class="hero-body">
       <div class="container">
         <h2 class="section-title">
-          Skills
+          Mission / Vision / Value
         </h2>
         <div class="columns is-vcentered">
-          <div class="column is-4-desktop is-half-widescreen is-8-fullhd">
-            <h3 class="main-message">MAIN MESSAGE</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
-              recusandae, libero animi labore dolorum nihil illum harum impedit
-              itaque, soluta delectus, omnis voluptates veritatis dignissimos
-              consequuntur enim beatae reprehenderit nobis!
-            </p>
+          <div class="column is-half-widescreen is-8-fullhd">
+            <h3 class="main-message">
+              「みせること」で人々をハッピーにする
+            </h3>
+            <div class="section-message">
+              <p>
+                仕事では自分の作業で物ができていくところを見るのが楽しいですし、自分の知識が問題にピッタリと合って解決するのが気持ち良いと感じています。<br />
+                そう思えるから、まだ整理されていない情報をシステムで「みせたり」、他のメンバーに技術や情報などを「みせて」助けています。
+              </p>
+              <p>
+                <strong
+                  >フロントエンド・バックエンドといった枠組みにとらわれず</strong
+                >トータルで「みせる」システムを実現することにより、ユーザーやプロジェクトメンバーを助けてハッピーにしていきたいです。
+              </p>
+            </div>
           </div>
-          <div class="column is-8-desktop is-half-widescreen is-4-fullhd">
+          <div class="column is-half-widescreen is-4-fullhd">
             <steps-balloon
-              ><h3 class="balloon-title">STEP 1</h3>
+              ><h3 class="balloon-title">1. Infra/Backend</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptate id natus nesciunt totam aut autem optio fuga, alias,
-                ea necessitatibus a. Natus quia voluptatem quidem earum labore
-                odio consequatur modi?
+                AWSやFirebaseなどのクラウドサービスを用いたインフラ・バックエンド開発の業務経験を積みながらプロジェクトに貢献しました。
               </p></steps-balloon
             >
             <steps-balloon
-              ><h3 class="balloon-title">STEP 2</h3>
+              ><h3 class="balloon-title">2. Frontend/Team Building</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptate id natus nesciunt totam aut autem optio fuga, alias,
-                ea necessitatibus a. Natus quia voluptatem quidem earum labore
-                odio consequatur modi?
+                現在はフロントエンド(Vue, ES6)中心に取り組んでいます。<br />また、次のステップに進むためチーム開発を円滑にする技術習得を目指します。
               </p></steps-balloon
             >
             <steps-balloon
-              ><h3 class="balloon-title">STEP 3</h3>
+              ><h3 class="balloon-title">3. Be a helpful Leader....</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptate id natus nesciunt totam aut autem optio fuga, alias,
-                ea necessitatibus a. Natus quia voluptatem quidem earum labore
-                odio consequatur modi?
+                将来的はメンバーを助けながら開発作業をして「みせること」をトータルで実現できるように目指しています。
               </p></steps-balloon
             >
           </div>
@@ -60,18 +58,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section.section-introduction {
+section#introduction {
   background-color: #0e376f;
+  color: white;
+
+  strong {
+    color: white;
+    text-decoration-line: underline;
+  }
 }
 
 h3 {
-  font-weight: bold;
-
-  &.main-message {
-    font-size: 300%;
-  }
-
   &.balloon-title {
+    font-weight: bold;
     font-size: 150%;
   }
 }
