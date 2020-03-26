@@ -81,19 +81,6 @@
       </div>
     </section>
 
-    <section class="hero is-info is-fullheight has-text-centered">
-      <div class="hero-body">
-        <div class="container">
-          <h2 class="section-title">
-            Vision / Motto
-          </h2>
-          <h2 class="subtitle subtitle-en">
-            I wish everyone's happiness with my contribution.
-          </h2>
-          <h2 class="subtitle subtitle-jp">自分のチカラでみんなを幸せに</h2>
-        </div>
-      </div>
-    </section>
     <section class="hero is-fullheight has-text-centered">
       <div class="hero-body">
         <div class="container">
