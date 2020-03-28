@@ -28,6 +28,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/bulma": "^1.2.1",
     "core-js": "2.6.9",
+    "easy-circular-progress": "^1.0.4",
     "minimist": "^1.2.5",
     "nuxt": "^2.0.0",
     "nuxt-fontawesome": "^0.4.0"
