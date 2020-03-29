@@ -8,7 +8,15 @@
 
         <div class="columns">
           <div class="column">
-            <skill-card />
+            <skill-card :skill-value-prop="75">
+              <template v-slot:icon
+                ><font-awesome-icon :icon="['fab', 'vuejs']"
+              /></template>
+              <template v-slot:title>Nuxt.js</template>
+              <template v-slot:description
+                >SPA, Atomic Designで構築できる</template
+              >
+            </skill-card>
             <h3 class="skill-header">Web-Frontend</h3>
             <ul>
               <li>Vue/Nuxt/Vuex</li>

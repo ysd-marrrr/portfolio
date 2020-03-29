@@ -47,6 +47,10 @@ export default {
   fontawesome: {
     imports: [
       {
+        set: '@fortawesome/free-brands-svg-icons',
+        icons: ['faVuejs']
+      },
+      {
         set: '@fortawesome/free-solid-svg-icons',
         icons: ['faTimesCircle']
       }

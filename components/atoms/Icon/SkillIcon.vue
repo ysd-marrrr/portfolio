@@ -2,9 +2,11 @@
   <div>
     <Progress
       :value="progressValueProp"
+      :radius="radiusProp"
       :stroke-color="strokeColorProp"
       :stroke-width="6"
-      ><slot><font-awesome-icon icon="times-circle"/></slot
+      ><span class="skill-icon"
+        ><slot><font-awesome-icon icon="times-circle"/></slot></span
     ></Progress>
   </div>
 </template>
@@ -20,10 +22,26 @@ export default {
       type: Number,
       default: 0
     },
+    radiusProp: {
+      type: Number,
+      default: 0
+    },
     strokeColorProp: {
       type: String,
-      default: '#DAE477'
+      default: '#3A6BA5'
     }
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.skill-icon {
+  font-size: 2rem;
+}
+
+.vue-circular-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
