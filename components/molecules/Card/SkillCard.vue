@@ -5,7 +5,7 @@
         <div class="column is-narrow">
           <skill-icon :progress-value-prop="'75'" />
         </div>
-        <div class="column is-narrow">
+        <div class="column is-narrow skills">
           <mini-title>Sample Skill</mini-title>
           <mini-paragraph>Skill description</mini-paragraph>
         </div>

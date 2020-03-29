@@ -8,6 +8,7 @@
 
         <div class="columns">
           <div class="column">
+            <skill-card />
             <h3 class="skill-header">Web-Frontend</h3>
             <ul>
               <li>Vue/Nuxt/Vuex</li>
@@ -49,3 +50,12 @@
     </div>
   </section>
 </template>
+
+<script>
+import SkillCard from '@/components/molecules/Card/SkillCard.vue'
+export default {
+  components: {
+    SkillCard
+  }
+}
+</script>

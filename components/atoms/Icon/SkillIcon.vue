@@ -1,6 +1,11 @@
 <template>
   <div>
-    <Progress :value="progressValueProp"><slot>X</slot></Progress>
+    <Progress
+      :value="progressValueProp"
+      :stroke-color="strokeColorProp"
+      :stroke-width="6"
+      ><slot><font-awesome-icon icon="times-circle"/></slot
+    ></Progress>
   </div>
 </template>
 
@@ -14,6 +19,10 @@ export default {
     progressValueProp: {
       type: Number,
       default: 0
+    },
+    strokeColorProp: {
+      type: String,
+      default: '#DAE477'
     }
   }
 }
