@@ -1,3 +1,4 @@
+// Global SCSS
 import 'bulma/css/bulma.css'
 import '@/assets/scss/global.scss'
 
@@ -13,5 +14,4 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 library.add(fas, far, fab)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
-
 configure(require.context('../components', true, /\.stories\.js$/), module);
