@@ -1,7 +1,9 @@
 # portfolio
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/eae68c87-34ca-4db8-aa4b-fe125addd487/deploy-status)](https://app.netlify.com/sites/ymixportfolio/deploys)
-[![Made with BULMA](https://bulma.io/images/made-with-bulma.png | 128x24)](http://bulma.io)
+<a href="https://bulma.io">
+<img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+</a>
 
 > My "prime" portfolio site.
 
