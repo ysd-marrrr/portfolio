@@ -60,7 +60,10 @@ export default {
           'faWindows',
           'faPython',
           'faJava',
-          'faPhp'
+          'faPhp',
+          'faTwitter',
+          'faGithub',
+          'faSpeakerDeck'
         ]
       },
       {
@@ -71,7 +74,9 @@ export default {
           'faLaptopCode',
           'faGem',
           'faDatabase',
-          'faBirthdayCake'
+          'faBirthdayCake',
+          'faSearch',
+          'faScroll'
         ]
       }
     ]
