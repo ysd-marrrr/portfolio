@@ -48,11 +48,31 @@ export default {
     imports: [
       {
         set: '@fortawesome/free-brands-svg-icons',
-        icons: ['faVuejs']
+        icons: [
+          'faVuejs',
+          'faHtml5',
+          'faNodeJs',
+          'faJsSquare',
+          'faAws',
+          'faDocker',
+          'faApple',
+          'faCentos',
+          'faWindows',
+          'faPython',
+          'faJava',
+          'faPhp'
+        ]
       },
       {
         set: '@fortawesome/free-solid-svg-icons',
-        icons: ['faTimesCircle']
+        icons: [
+          'faTimesCircle',
+          'faFire',
+          'faLaptopCode',
+          'faGem',
+          'faDatabase',
+          'faBirthdayCake'
+        ]
       }
     ]
   },

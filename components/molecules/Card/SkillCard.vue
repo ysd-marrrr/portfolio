@@ -1,13 +1,13 @@
 <template>
   <div class="card skill-card">
     <div class="card-content skill-card-content">
-      <div class="columns">
+      <div class="columns is-vcentered">
         <div class="column is-narrow skill-card-left">
           <skill-icon :progress-value-prop="skillValueProp" :radius-prop="30">
             <slot name="icon" />
           </skill-icon>
         </div>
-        <div class="column is-narrow skill-card-right">
+        <div class="column skill-card-right">
           <mini-title><slot name="title">Sample Skill</slot></mini-title>
           <mini-paragraph
             ><slot name="description">Skill description</slot></mini-paragraph
@@ -41,10 +41,11 @@ export default {
 <style lang="scss" scoped>
 .skill-card {
   border-radius: 5px;
+  margin-bottom: 1.5rem;
 }
 
 .skill-card-content {
-  padding: 1.5rem 1rem 1rem 1.5rem;
+  padding: 1.5rem 1rem 1.5rem 1.5rem;
 }
 
 .skill-card-left,
@@ -54,6 +55,6 @@ export default {
 
 .skill-card-right {
   text-align: left;
-  margin-left: 1rem;
+  margin: 0 1rem;
 }
 </style>
