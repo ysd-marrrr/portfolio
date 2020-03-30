@@ -28,112 +28,28 @@
         </div>
       </div>
     </section>
-    <section class="hero is-success is-fullheight has-text-centered">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Skills
-          </h1>
 
-          <div class="columns">
-            <div class="column">
-              <h3 class="skill-header">Web-Frontend</h3>
-              <ul>
-                <li>Vue/Nuxt/Vuex</li>
-                <li>HTML/CSS(SCSS)</li>
-                <li>ECMAScript 6</li>
-                <li>Node.js/npm scripts</li>
-                <li>Webpack</li>
-              </ul>
-            </div>
-            <div class="column">
-              <h3 class="skill-header">Infrastructure</h3>
-              <ul>
-                <li>
-                  AWS(EC2, VPC, ECS, ECR, Route53, SES, Lambda, Kinesis, S3,
-                  CloudFront, API Gateway, Batch, Glue, Athena)
-                </li>
-                <li>Firebase</li>
-                <li>Windows</li>
-                <li>Linux</li>
-                <li>macOS</li>
-                <li>Vagrant</li>
-                <li>Docker</li>
-              </ul>
-            </div>
-            <div class="column">
-              <h3 class="skill-header">Others</h3>
-              <ul>
-                <li>Python</li>
-                <li>Elastic Stack(Elasticsearch, Logstash)</li>
-                <li>Java</li>
-                <li>Spring Boot</li>
-                <li>PHP</li>
-                <li>CakePHP</li>
-              </ul>
-              Speaker Deck
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="hero is-info is-fullheight has-text-centered">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Vision / Motto
-          </h1>
-          <h2 class="subtitle subtitle-en">
-            I wish everyone's happiness with my contribution.
-          </h2>
-          <h2 class="subtitle subtitle-jp">自分のチカラでみんなを幸せに</h2>
-        </div>
-      </div>
-    </section>
-    <section class="hero is-fullheight has-text-centered">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Links
-          </h1>
-
-          <div class="columns is-centered is-multiline">
-            <div class="column is-narrow">
-              <a href="https://twitter.com/bwolftech">Twitter</a>
-            </div>
-            <div class="column is-narrow">
-              <a href="https://github.com/ysd-marrrr">GitHub</a>
-            </div>
-            <div class="column is-narrow">
-              <a href="https://qiita.com/ysd_marrrr">Qiita</a>
-            </div>
-            <div class="column is-narrow">
-              <a href="https://speakerdeck.com/ysd_marrrr">Speaker Deck</a>
-            </div>
-            <div class="column is-narrow">
-              <a href="https://y-mix.hateblo.jp/">Blog</a>
-            </div>
-            <div class="column is-narrow">
-              <a href="https://tech.opst.co.jp/author/yoshida.m/"
-                >TECH4ALL<br />(Corporate Blog)</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <introduction />
+    <skill />
+    <profile-link />
   </div>
 </template>
 
 <script>
-export default {}
+import Introduction from '@/components/organisms/section/Introduction.vue'
+import Skill from '@/components/organisms/section/Skill.vue'
+import ProfileLink from '@/components/organisms/section/ProfileLink.vue'
+
+export default {
+  components: {
+    Introduction,
+    Skill,
+    ProfileLink
+  }
+}
 </script>
 
 <style lang="scss" scoped>
-h1.title {
-  font-size: 200%;
-}
-
 h3.skill-header {
   font-weight: bold;
   font-size: 150%;
