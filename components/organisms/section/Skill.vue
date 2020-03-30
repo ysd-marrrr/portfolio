@@ -56,6 +56,18 @@
             </skill-card>
           </div>
         </div>
+        <hr class="inner-divider" />
+        <div class="skill-and-more">
+          <h3 class="skill-header">And More</h3>
+          <ul class="skill-and-more-list">
+            <li v-for="(item, index) in skillAndMore" :key="index">
+              <span class="tag is-light">{{ item }}</span>
+            </li>
+          </ul>
+          <p class="section-note">
+            課題解決・Mission実現のために未経験の技術・言語にも取り組みます！
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -207,13 +219,30 @@ export default {
           level: 40,
           faIcons: ['fas', 'birthday-cake']
         }
+      ],
+      skillAndMore: [
+        'Go',
+        'Apache Spark',
+        'Twitter API',
+        'ShellScript',
+        'Flask',
+        'jQuery',
+        'Bulma',
+        'nginx',
+        'Jenkins',
+        'BigQuery',
+        'Ionic',
+        'Bootstrap',
+        'iOS(Objective-C)',
+        'Android(Java)',
+        'Unity(JS, C#)'
       ]
     }
   }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 section#skill {
   background-color: #3a6ba5;
   color: white;
@@ -224,5 +253,19 @@ h3.skill-header {
   font-size: 2rem;
   letter-spacing: 0.5rem;
   font-weight: bold;
+}
+
+.skill-and-more {
+  text-align: left;
+}
+
+ul.skill-and-more-list {
+  list-style-type: none;
+
+  li {
+    display: inline;
+    line-height: 2rem;
+    margin-right: 0.5rem;
+  }
 }
 </style>
