@@ -7,7 +7,7 @@
       PRINTING
     </div>
     <div class="project-content">
-      <h3>PROJECT TITLE</h3>
+      <h3 class="project-title">PROJECT TITLE</h3>
       <p class="project-description">description</p>
     </div>
     <div class="project-footer">
@@ -26,15 +26,19 @@
 
 .project-date {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: gray;
 }
 
 .project-image {
-  width: 75%;
-  margin: auto;
+  margin: auto 15%;
   background: gray;
   color: white;
   text-align: center;
+}
+
+h3.project-title {
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 </style>
