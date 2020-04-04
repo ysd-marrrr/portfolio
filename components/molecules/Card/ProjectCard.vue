@@ -13,12 +13,35 @@
       <p class="project-description">description</p>
     </div>
     <div class="project-footer">
-      <ul class="tags project-skill-list">
-        <li><span class="tag">TAG</span></li>
-      </ul>
+      <tag-list
+        :tag-list-prop="projectSkillListProp"
+        :custom-class-prop="'project-skill-list'"
+      />
     </div>
   </div>
 </template>
+
+<script>
+import TagList from '@/components/molecules/TagList/TagList.vue'
+export default {
+  components: {
+    TagList
+  },
+  props: {
+    projectSkillListProp: {
+      type: Array,
+      default() {
+        return [
+          { text: 'Skill' },
+          { text: 'Skill' },
+          { text: 'Skill' },
+          { text: 'Skill' }
+        ]
+      }
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 .project-card {

@@ -59,11 +59,10 @@
         <hr class="inner-divider" />
         <div class="skill-and-more">
           <h3 class="skill-header">And More</h3>
-          <ul class="tags skill-and-more-list">
-            <li v-for="(item, index) in skillAndMore" :key="index">
-              <span class="tag is-light">{{ item }}</span>
-            </li>
-          </ul>
+          <tag-list
+            :tag-list-prop="skillAndMore"
+            :custom-class-prop="'skill-and-more-list'"
+          />
           <p class="section-note">
             課題解決・Mission実現のために未経験の技術・言語にも取り組みます！
           </p>
@@ -75,9 +74,11 @@
 
 <script>
 import SkillCard from '@/components/molecules/Card/SkillCard.vue'
+import TagList from '@/components/molecules/TagList/TagList.vue'
 export default {
   components: {
-    SkillCard
+    SkillCard,
+    TagList
   },
   data() {
     return {
@@ -221,21 +222,21 @@ export default {
         }
       ],
       skillAndMore: [
-        'Go',
-        'Apache Spark',
-        'Twitter API',
-        'ShellScript',
-        'Flask',
-        'jQuery',
-        'Bulma',
-        'nginx',
-        'Jenkins',
-        'BigQuery',
-        'Ionic',
-        'Bootstrap',
-        'iOS(Objective-C)',
-        'Android(Java)',
-        'Unity(JS, C#)'
+        { text: 'Go' },
+        { text: 'Apache Spark' },
+        { text: 'Twitter API' },
+        { text: 'ShellScript' },
+        { text: 'Flask' },
+        { text: 'jQuery' },
+        { text: 'Bulma' },
+        { text: 'nginx' },
+        { text: 'Jenkins' },
+        { text: 'BigQuery' },
+        { text: 'Ionic' },
+        { text: 'Bootstrap' },
+        { text: 'iOS(Objective-C)' },
+        { text: 'Android(Java)' },
+        { text: 'Unity(JS, C#)' }
       ]
     }
   }
