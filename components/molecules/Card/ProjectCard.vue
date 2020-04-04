@@ -3,11 +3,7 @@
     <div class="project-header">
       <p class="project-date">2019</p>
     </div>
-    <div class="project-image no-image">
-      <div class="inner">
-        <p class="no-image-message">NOW<br />PRINTING</p>
-      </div>
-    </div>
+    <project-image :image-url-prop="imageUrlProp" />
     <div class="project-content">
       <h3 class="project-title">PROJECT TITLE</h3>
       <p class="project-description">description</p>
@@ -23,11 +19,18 @@
 
 <script>
 import TagList from '@/components/molecules/TagList/TagList.vue'
+import ProjectImage from '@/components/atoms/Image/ProjectImage.vue'
+
 export default {
   components: {
-    TagList
+    TagList,
+    ProjectImage
   },
   props: {
+    imageUrlProp: {
+      type: String,
+      default: ''
+    },
     projectSkillListProp: {
       type: Array,
       default() {
@@ -58,55 +61,10 @@ export default {
   color: gray;
 }
 
-// 正方形のまま「レスポンシブに」サイズを小さくする
-// thx: http://wreath-ent.co.jp/blog-3560/
-.project-image {
-  position: relative;
-  width: 85%;
-  height: auto;
-  text-align: center;
-
-  &:before {
-    content: '';
-    display: block;
-    padding-top: 100%;
-  }
-
-  .inner {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  &.no-image,
-  &.now-printing {
-    .no-image-message {
-      font-family: 'Comfortaa', cursive;
-      font-weight: bold;
-      font-size: 300%;
-
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translateY(-50%) translateX(-50%);
-      -webkit-transform: translateY(-50%) translateX(-50%);
-    }
-  }
-}
-
 // タブレット以上の場合は横に複数枚並べる
 @media screen and (min-width: 769px) {
   .project-card {
     max-width: 20rem;
-  }
-
-  .project-image {
-    width: 95%;
-
-    .inner {
-      left: 2.5%;
-    }
   }
 }
 
@@ -115,26 +73,6 @@ export default {
   .project-card {
     max-width: 100vw;
   }
-
-  .project-image {
-    width: 100%;
-    .inner {
-      left: 0;
-    }
-  }
-}
-
-.adjust-box p {
-  line-height: 1.5em;
-}
-
-.inner {
-  position: absolute;
-  background: lightgray;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 h3.project-title {

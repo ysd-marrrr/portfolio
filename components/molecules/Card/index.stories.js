@@ -7,7 +7,13 @@ storiesOf('/molecules/Card/SkillCard', module).add('default', () => ({
   template: '<skill-card />'
 }))
 
-storiesOf('/molecules/Card/ProjectCard', module).add('default', () => ({
-  components: { ProjectCard },
-  template: '<project-card />'
-}))
+storiesOf('/molecules/Card/ProjectCard', module)
+  .add(':has-image', () => ({
+    components: { ProjectCard },
+    template:
+      '<project-card :image-url-prop="\'https://placebear.com/640/480\'" />'
+  }))
+  .add(':no-image', () => ({
+    components: { ProjectCard },
+    template: '<project-card />'
+  }))
