@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300;700&display=swap');
+
 
 // 各セクション領域の大きさ
 .profile-section {
@@ -42,4 +43,15 @@ hr.inner-divider {
 // セクションの最後に補足する
 .section-note {
   text-align: right;
+}
+
+// タグ用共通スタイル
+ul.tags {
+  list-style-type: none;
+
+  li {
+    display: inline;
+    line-height: 2rem;
+    margin-right: 0.5rem;
+  }
 }

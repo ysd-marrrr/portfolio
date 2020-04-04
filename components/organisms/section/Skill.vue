@@ -59,7 +59,7 @@
         <hr class="inner-divider" />
         <div class="skill-and-more">
           <h3 class="skill-header">And More</h3>
-          <ul class="skill-and-more-list">
+          <ul class="tags skill-and-more-list">
             <li v-for="(item, index) in skillAndMore" :key="index">
               <span class="tag is-light">{{ item }}</span>
             </li>
@@ -257,15 +257,5 @@ h3.skill-header {
 
 .skill-and-more {
   text-align: left;
-}
-
-ul.skill-and-more-list {
-  list-style-type: none;
-
-  li {
-    display: inline;
-    line-height: 2rem;
-    margin-right: 0.5rem;
-  }
 }
 </style>

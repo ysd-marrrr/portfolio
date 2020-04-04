@@ -4,14 +4,18 @@
       <p class="project-date">2019</p>
     </div>
     <div class="project-image no-image">
-      <div class="inner">PRINTING</div>
+      <div class="inner">
+        <p class="no-image-message">NOW<br />PRINTING</p>
+      </div>
     </div>
     <div class="project-content">
       <h3 class="project-title">PROJECT TITLE</h3>
       <p class="project-description">description</p>
     </div>
     <div class="project-footer">
-      TAG
+      <ul class="tags project-skill-list">
+        <li><span class="tag">TAG</span></li>
+      </ul>
     </div>
   </div>
 </template>
@@ -25,8 +29,9 @@
 }
 
 .project-date {
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-family: 'Comfortaa', cursive;
+  font-size: 2rem;
+  letter-spacing: 0.25rem;
   color: gray;
 }
 
@@ -49,6 +54,21 @@
     top: 0;
     width: 100%;
     height: 100%;
+  }
+
+  &.no-image,
+  &.now-printing {
+    .no-image-message {
+      font-family: 'Comfortaa', cursive;
+      font-weight: bold;
+      font-size: 300%;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      -webkit-transform: translateY(-50%) translateX(-50%);
+    }
   }
 }
 
@@ -87,8 +107,7 @@
 
 .inner {
   position: absolute;
-  background: gray;
-  color: white;
+  background: lightgray;
   top: 0;
   left: 0;
   width: 100%;
@@ -96,7 +115,7 @@
 }
 
 h3.project-title {
-  font-weight: bold;
+  font-weight: 900;
   font-size: 1.25rem;
 }
 </style>
