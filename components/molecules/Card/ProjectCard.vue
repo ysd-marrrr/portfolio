@@ -1,16 +1,16 @@
 <template>
   <div class="project-card">
     <div class="project-header">
-      <p class="project-date">2019</p>
+      <p class="project-date">{{ projectDate }}</p>
     </div>
     <project-image :image-url-prop="imageUrlProp" />
     <div class="project-content">
-      <h3 class="project-title">PROJECT TITLE</h3>
-      <p class="project-description">description</p>
+      <h3 class="project-title">{{ projectTitle }}</h3>
+      <p class="project-description">{{ projectDescription }}</p>
     </div>
     <div class="project-footer">
       <tag-list
-        :tag-list-prop="projectSkillListProp"
+        :tag-list-prop="projectSkillList"
         :custom-class-prop="'project-skill-list'"
       />
     </div>
@@ -27,11 +27,23 @@ export default {
     ProjectImage
   },
   props: {
+    dateProp: {
+      type: String,
+      default: '2020'
+    },
+    titleProp: {
+      type: String,
+      default: 'PROJECT TITLE'
+    },
+    descriptionProp: {
+      type: String,
+      default: 'project description'
+    },
     imageUrlProp: {
       type: String,
       default: ''
     },
-    projectSkillListProp: {
+    skillListProp: {
       type: Array,
       default() {
         return [
@@ -41,6 +53,20 @@ export default {
           { text: 'Skill' }
         ]
       }
+    }
+  },
+  computed: {
+    projectDate() {
+      return this.dateProp
+    },
+    projectTitle() {
+      return this.titleProp
+    },
+    projectDescription() {
+      return this.descriptionProp
+    },
+    projectSkillList() {
+      return this.skillListProp
     }
   }
 }
