@@ -1,5 +1,5 @@
 <template>
-  <h3 :class="'mini-title' + customClassProp"><slot></slot></h3>
+  <h3 :class="'middle-card-title' + customClassProp"><slot></slot></h3>
 </template>
 
 <script>
@@ -15,7 +15,7 @@ export default {
 
 <style lang="scss" scoped>
 h3 {
-  &.mini-title {
+  &.middle-card-title {
     font-weight: bold;
     font-size: 150%;
   }
