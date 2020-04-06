@@ -3,14 +3,16 @@
     <div class="project-header">
       <p class="project-date">{{ projectDate }}</p>
     </div>
-    <div class="columns is-vcentered">
+    <div class="columns is-vcentered is-mobile">
       <div class="column is-narrow">
         <mini-project-image :image-url-prop="imageUrlProp" />
       </div>
       <div class="column">
         <div class="project-content">
-          <h3 class="project-title">{{ projectTitle }}</h3>
-          <p class="project-description">{{ projectDescription }}</p>
+          <h3 class="project-title"><slot name="title">PROJECT TITLE</slot></h3>
+          <p class="project-description">
+            <slot name="description">project description </slot>
+          </p>
         </div>
         <div class="project-footer">
           <tag-list

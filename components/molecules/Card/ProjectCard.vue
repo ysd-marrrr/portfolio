@@ -5,8 +5,10 @@
     </div>
     <project-image :image-url-prop="imageUrlProp" />
     <div class="project-content">
-      <h3 class="project-title">{{ projectTitle }}</h3>
-      <p class="project-description">{{ projectDescription }}</p>
+      <h3 class="project-title"><slot name="title">PROJECT TITLE</slot></h3>
+      <p class="project-description">
+        <slot name="description">project description </slot>
+      </p>
     </div>
     <div class="project-footer">
       <tag-list
@@ -31,14 +33,6 @@ export default {
       type: String,
       default: '2020'
     },
-    titleProp: {
-      type: String,
-      default: 'PROJECT TITLE'
-    },
-    descriptionProp: {
-      type: String,
-      default: 'project description'
-    },
     imageUrlProp: {
       type: String,
       default: ''
@@ -58,12 +52,6 @@ export default {
   computed: {
     projectDate() {
       return this.dateProp
-    },
-    projectTitle() {
-      return this.titleProp
-    },
-    projectDescription() {
-      return this.descriptionProp
     },
     projectSkillList() {
       return this.skillListProp
