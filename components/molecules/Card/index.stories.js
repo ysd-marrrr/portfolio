@@ -1,6 +1,7 @@
 import { storiesOf } from '@storybook/vue'
 import SkillCard from '@/components/molecules/Card/SkillCard.vue'
 import ProjectCard from '@/components/molecules/Card/ProjectCard.vue'
+import MiniProjectCard from '@/components/molecules/Card/MiniProjectCard.vue'
 
 storiesOf('/molecules/Card/SkillCard', module).add('default', () => ({
   components: { SkillCard },
@@ -16,4 +17,15 @@ storiesOf('/molecules/Card/ProjectCard', module)
   .add(':no-image', () => ({
     components: { ProjectCard },
     template: '<project-card />'
+  }))
+
+storiesOf('/molecules/Card/MiniProjectCard', module)
+  .add(':has-image', () => ({
+    components: { MiniProjectCard },
+    template:
+      '<mini-project-card :image-url-prop="\'https://placebear.com/640/480\'" />'
+  }))
+  .add(':no-image', () => ({
+    components: { MiniProjectCard },
+    template: '<mini-project-card />'
   }))
