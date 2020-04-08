@@ -31,6 +31,7 @@
 
     <introduction />
     <skill />
+    <Project />
     <profile-link />
   </div>
 </template>
@@ -38,12 +39,14 @@
 <script>
 import Introduction from '@/components/organisms/section/Introduction.vue'
 import Skill from '@/components/organisms/section/Skill.vue'
+import Project from '@/components/organisms/section/Project.vue'
 import ProfileLink from '@/components/organisms/section/ProfileLink.vue'
 
 export default {
   components: {
     Introduction,
     Skill,
+    Project,
     ProfileLink
   }
 }
