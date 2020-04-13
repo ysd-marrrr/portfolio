@@ -5,11 +5,17 @@
     </div>
     <div class="columns is-vcentered is-mobile">
       <div class="column is-narrow">
-        <mini-project-image :image-url-prop="imageUrlProp" />
+        <a class="project-link" :href="projectUrl">
+          <mini-project-image :image-url-prop="imageUrlProp" />
+        </a>
       </div>
       <div class="column">
         <div class="project-content">
-          <h3 class="project-title"><slot name="title">PROJECT TITLE</slot></h3>
+          <a class="project-link" :href="projectUrl">
+            <h3 class="project-title">
+              <slot name="title">PROJECT TITLE</slot>
+            </h3>
+          </a>
           <p class="project-description">
             <slot name="description">project description </slot>
           </p>
@@ -39,13 +45,9 @@ export default {
       type: String,
       default: '2020'
     },
-    titleProp: {
+    urlProp: {
       type: String,
-      default: 'PROJECT TITLE'
-    },
-    descriptionProp: {
-      type: String,
-      default: 'project description'
+      default: '#projects'
     },
     imageUrlProp: {
       type: String,
@@ -67,6 +69,9 @@ export default {
     projectDate() {
       return this.dateProp
     },
+    projectUrl() {
+      return this.urlProp
+    },
     projectTitle() {
       return this.titleProp
     },
@@ -81,19 +86,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.project-card {
-  background: white;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-  padding: 5px;
-}
-
 .project-date {
-  font-family: 'Comfortaa', cursive;
   font-size: 1.25rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
-  color: gray;
 }
 
 // タブレット以上の場合は横に複数枚並べる

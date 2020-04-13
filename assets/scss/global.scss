@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Comfortaa:wght@300;700&display=swap');
 
-
 // 各セクション領域の大きさ
 .profile-section {
   padding: 10rem 1.5rem;
@@ -43,4 +42,39 @@ hr.inner-divider {
 // セクションの最後に補足する
 .section-note {
   text-align: right;
+}
+
+// Projects
+.project-card {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  padding: 5px;
+
+  position: relative;
+  top: 0rem;
+  transition: all 500ms ease;
+
+  // Projectsをホバーしたとき
+  &:hover {
+    top: -0.5rem;
+  }
+
+  h3.project-title {
+    font-weight: 900;
+    font-size: 1.25rem;
+  }
+
+  .project-date {
+    font-family: 'Comfortaa', cursive;
+    color: gray;
+  }
+
+  a.project-link {
+    color: #4a4a4a;
+  
+    &:hover {
+      color: rgba(74, 74, 74, 0.5);
+    }
+  }
 }

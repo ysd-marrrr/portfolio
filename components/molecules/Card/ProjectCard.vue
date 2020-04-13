@@ -3,9 +3,15 @@
     <div class="project-header">
       <p class="project-date">{{ projectDate }}</p>
     </div>
-    <project-image :image-url-prop="imageUrlProp" />
+    <a class="project-link" :href="projectUrl">
+      <project-image :image-url-prop="imageUrlProp" />
+    </a>
     <div class="project-content">
-      <h3 class="project-title"><slot name="title">PROJECT TITLE</slot></h3>
+      <a class="project-link" :href="projectUrl">
+        <h3 class="project-title">
+          <slot name="title">PROJECT TITLE</slot>
+        </h3>
+      </a>
       <p class="project-description">
         <slot name="description">project description </slot>
       </p>
@@ -33,6 +39,10 @@ export default {
       type: String,
       default: '2020'
     },
+    urlProp: {
+      type: String,
+      default: '#projects'
+    },
     imageUrlProp: {
       type: String,
       default: ''
@@ -53,6 +63,9 @@ export default {
     projectDate() {
       return this.dateProp
     },
+    projectUrl() {
+      return this.urlProp
+    },
     projectSkillList() {
       return this.skillListProp
     }
@@ -61,18 +74,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.project-card {
-  background: white;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-  padding: 5px;
-}
-
 .project-date {
-  font-family: 'Comfortaa', cursive;
   font-size: 2rem;
   letter-spacing: 0.25rem;
-  color: gray;
 }
 
 // タブレット以上の場合は横に複数枚並べる
@@ -87,10 +91,5 @@ export default {
   .project-card {
     max-width: 100vw;
   }
-}
-
-h3.project-title {
-  font-weight: 900;
-  font-size: 1.25rem;
 }
 </style>
