@@ -95,7 +95,7 @@ export default {
 // タブレット以上の場合は横に複数枚並べる
 @media screen and (min-width: 769px) {
   .project-card {
-    max-width: 40rem;
+    max-width: 30rem;
   }
 }
 
