@@ -5,11 +5,11 @@
         <h2 class="section-title">
           Projects
         </h2>
-        <div class="columns personal-projects">
+        <div class="columns is-multiline project-area personal-projects">
           <project-card
             v-for="(item, index) in personalProjects"
             :key="index"
-            class="column"
+            class="column is-6-tablet is-3-desktop"
             :date-prop="item.date"
             :url-prop="item.url"
             :image-url-prop="item.image"
@@ -20,11 +20,11 @@
           </project-card>
         </div>
         <hr class="inner-divider" />
-        <div class="columns other-projects">
+        <div class="columns is-multiline project-area other-projects">
           <mini-project-card
             v-for="(item, index) in otherProjects"
             :key="index"
-            class="column"
+            class="column is-6-tablet is-4-desktop"
             :date-prop="item.date"
             :url-prop="item.url"
             :image-url-prop="item.image"
@@ -81,5 +81,9 @@ export default {
 <style lang="scss" scoped>
 section#project {
   background-color: #7ed6c6;
+}
+
+.project-area {
+  justify-content: center;
 }
 </style>

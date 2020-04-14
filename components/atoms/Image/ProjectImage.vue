@@ -68,8 +68,7 @@ export default {
 
     .no-image-message {
       font-family: 'Comfortaa', cursive;
-      font-weight: bold;
-      font-size: 300%;
+      font-size: 250%;
 
       position: absolute;
       top: 50%;
