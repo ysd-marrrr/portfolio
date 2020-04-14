@@ -5,17 +5,14 @@
     </div>
     <div class="columns is-vcentered is-mobile">
       <div class="column is-narrow">
-        <a class="project-link" :href="projectUrl">
-          <mini-project-image :image-url-prop="imageUrlProp" />
-        </a>
+        <mini-project-image :image-url-prop="imageUrlProp" />
       </div>
       <div class="column">
         <div class="project-content">
-          <a class="project-link" :href="projectUrl">
-            <h3 class="project-title">
-              <slot name="title">PROJECT TITLE</slot>
-            </h3>
-          </a>
+          <h3 class="project-title">
+            <slot name="title">PROJECT TITLE</slot>
+          </h3>
+
           <p class="project-description">
             <slot name="description">project description </slot>
           </p>
@@ -95,14 +92,14 @@ export default {
 // タブレット以上の場合は横に複数枚並べる
 @media screen and (min-width: 769px) {
   .project-card {
-    max-width: 30rem;
+    width: calc(50% - 0.75rem);
   }
 }
 
 // モバイルの場合は横いっぱいカードを表示する
 @media screen and (max-width: 768px) {
   .project-card {
-    max-width: 100vw;
+    width: calc(100% - 0.75rem);
   }
 }
 

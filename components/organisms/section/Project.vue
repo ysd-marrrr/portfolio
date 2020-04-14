@@ -5,11 +5,10 @@
         <h2 class="section-title">
           Projects
         </h2>
-        <div class="columns is-multiline project-area personal-projects">
+        <div class="project-area personal-projects">
           <project-card
             v-for="(item, index) in personalProjects"
             :key="index"
-            class="column is-6-tablet is-3-desktop"
             :date-prop="item.date"
             :url-prop="item.url"
             :image-url-prop="item.image"
@@ -20,11 +19,10 @@
           </project-card>
         </div>
         <hr class="inner-divider" />
-        <div class="columns is-multiline project-area other-projects">
+        <div class="project-area other-projects">
           <mini-project-card
             v-for="(item, index) in otherProjects"
             :key="index"
-            class="column is-6-tablet is-4-desktop"
             :date-prop="item.date"
             :url-prop="item.url"
             :image-url-prop="item.image"
@@ -56,17 +54,57 @@ export default {
       personalProjects: [
         {
           title: 'Now Printing...',
-          date: 2020,
+          date: '2020',
           image: '',
-          url: '',
+          url: '#',
           description: 'Now Printing...',
-          skill: []
+          skill: [{ text: 'hoge' }, { text: 'hoge' }, { text: 'hoge' }]
+        },
+        {
+          title: 'Now Printing...',
+          date: '2020',
+          image: '',
+          url: '#',
+          description: 'Now Printing...',
+          skill: [{ text: 'hoge' }, { text: 'hoge' }, { text: 'hoge' }]
+        },
+        {
+          title: 'Now Printing...',
+          date: '2020',
+          image: '',
+          url: '#',
+          description: 'Now Printing...',
+          skill: [{ text: 'hoge' }, { text: 'hoge' }, { text: 'hoge' }]
+        },
+        {
+          title: 'Now Printing...',
+          date: '2020',
+          image: '',
+          url: '#',
+          description: 'Now Printing...',
+          skill: [{ text: 'hoge' }, { text: 'hoge' }, { text: 'hoge' }]
+        },
+        {
+          title: 'Now Printing...',
+          date: '2020',
+          image: '',
+          url: '#',
+          description: 'Now Printing...',
+          skill: [{ text: 'hoge' }, { text: 'hoge' }, { text: 'hoge' }]
+        },
+        {
+          title: 'Now Printing...',
+          date: '2020',
+          image: '',
+          url: '#',
+          description: 'Now Printing...',
+          skill: [{ text: 'hoge' }, { text: 'hoge' }, { text: 'hoge' }]
         }
       ],
       otherProjects: [
         {
           title: 'Now Printing...',
-          date: 2020,
+          date: '2020',
           image: '',
           url: '',
           description: 'Now Printing...',
@@ -84,6 +122,7 @@ section#project {
 }
 
 .project-area {
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 </style>

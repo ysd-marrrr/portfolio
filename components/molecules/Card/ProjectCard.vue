@@ -80,15 +80,30 @@ export default {
 }
 
 // タブレット以上の場合は横に複数枚並べる
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1401px) {
   .project-card {
+    width: calc(25% - 0.75rem);
     max-width: 20rem;
   }
 }
 
-// モバイルの場合は横いっぱいカードを表示する
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 900px) and (max-width: 1400px) {
   .project-card {
+    width: calc(33.3% - 0.75rem);
+  }
+}
+
+// モバイルの場合は横いっぱいカードを表示する
+@media screen and (min-width: 640px) and (max-width: 899px) {
+  .project-card {
+    width: calc(50% - 0.75rem);
+    max-width: 100vw;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .project-card {
+    width: calc(100% - 0.75rem);
     max-width: 100vw;
   }
 }
