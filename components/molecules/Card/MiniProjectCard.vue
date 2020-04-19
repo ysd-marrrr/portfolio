@@ -3,8 +3,8 @@
     <div class="project-header">
       <p class="project-date">{{ projectDate }}</p>
     </div>
-    <div class="columns is-vcentered is-mobile">
-      <div class="column is-narrow">
+    <div class="columns is-mobile project-body">
+      <div class="column is-narrow project-image">
         <mini-project-image :image-url-prop="imageUrlProp" />
       </div>
       <div class="column">
@@ -89,15 +89,19 @@ export default {
   letter-spacing: 0.1rem;
 }
 
+.project-body {
+  height: 100%;
+}
+
 // タブレット以上の場合は横に複数枚並べる
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 801px) {
   .project-card {
     width: calc(50% - 0.75rem);
   }
 }
 
 // モバイルの場合は横いっぱいカードを表示する
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .project-card {
     width: calc(100% - 0.75rem);
   }

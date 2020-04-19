@@ -1,5 +1,5 @@
 <template>
-  <div class="project-image">
+  <div class="project-image-wrapper">
     <div v-if="imageUrlProp == ''" class="no-image">
       <div class="inner">
         <p class="no-image-message">NOW<br />PRINTING</p>
@@ -32,7 +32,7 @@ export default {
 <style lang="scss" scoped>
 // 正方形のまま「レスポンシブに」サイズを小さくする
 // thx: http://wreath-ent.co.jp/blog-3560/
-.project-image {
+.project-image-wrapper {
   position: relative;
   width: 85%;
   height: auto;
@@ -81,7 +81,7 @@ export default {
 
 // タブレット以上の場合は横に複数枚並べる
 @media screen and (min-width: 769px) {
-  .project-image {
+  .project-image-wrapper {
     width: 95%;
 
     .inner {
@@ -92,7 +92,7 @@ export default {
 
 // モバイルの場合は横いっぱいカードを表示する
 @media screen and (max-width: 768px) {
-  .project-image {
+  .project-image-wrapper {
     width: 100%;
     .inner {
       left: 0;
