@@ -57,58 +57,72 @@ export default {
           date: '2020',
           image: '',
           url: '#',
-          description: 'Now Printing...',
-          skill: [{ text: 'hoge' }, { text: 'hoge' }, { text: 'hoge' }]
+          description: 'Now Developing...',
+          skill: [{ text: 'Nuxt.js' }, { text: 'Firebase' }]
         },
         {
-          title: 'Now Printing...',
+          title: 'portfolio',
           date: '2020',
           image: '',
-          url: '#',
-          description: 'Now Printing...',
-          skill: [{ text: 'hoge' }, { text: 'hoge' }, { text: 'hoge' }]
-        },
-        {
-          title: 'Now Printing...',
-          date: '2020',
-          image: '',
-          url: '#',
-          description: 'Now Printing...',
-          skill: [{ text: 'hoge' }, { text: 'hoge' }, { text: 'hoge' }]
-        },
-        {
-          title: 'Now Printing...',
-          date: '2020',
-          image: '',
-          url: '#',
-          description: 'Now Printing...',
-          skill: [{ text: 'hoge' }, { text: 'hoge' }, { text: 'hoge' }]
-        },
-        {
-          title: 'Now Printing...',
-          date: '2020',
-          image: '',
-          url: '#',
-          description: 'Now Printing...',
-          skill: [{ text: 'hoge' }, { text: 'hoge' }, { text: 'hoge' }]
-        },
-        {
-          title: 'Now Printing...',
-          date: '2020',
-          image: '',
-          url: '#',
-          description: 'Now Printing...',
-          skill: [{ text: 'hoge' }, { text: 'hoge' }, { text: 'hoge' }]
+          url: 'https://www.y-mix.dev/',
+          description: 'My "prime" portfolio site.',
+          skill: [
+            { text: 'Nuxt.js' },
+            { text: 'Atomic Design' },
+            { text: 'SCSS' },
+            { text: 'Bulma' },
+            { text: 'Netlify' }
+          ]
         }
       ],
       otherProjects: [
         {
-          title: 'Now Printing...',
-          date: '2020',
+          title: 'Twitter分析ツールの開発',
+          date: '2018',
           image: '',
           url: '',
-          description: 'Now Printing...',
-          skill: []
+          description:
+            'SpringBoot, Elasticsearchで開発された分析ツールの機能追加・保守を担当しました。また、新しい角度でTwitterの話題を分析するツールをNuxt.jsなどで開発し、分析結果に応じてスピーディーに改良を重ねています。',
+          skill: [
+            { text: 'Nuxt.js' },
+            { text: 'Atomic Design' },
+            { text: 'Python' },
+            { text: 'docker-compose' },
+            { text: 'MySQL' },
+            { text: 'SpringBoot' },
+            { text: 'Elasticsearch' },
+            { text: 'Logstash' }
+          ]
+        },
+        {
+          title: 'ピクセルトラッキングシステムのサーバーレス化',
+          date: '2017',
+          image: '',
+          url: '',
+          description:
+            'Apache, PHPで動作しているピクセルトラッキングシステムをAWS ECSに置き換えました。',
+          skill: [
+            { text: 'AWS' },
+            { text: 'Python' },
+            { text: 'Apache' },
+            { text: 'nginx' },
+            { text: 'Docker' },
+            { text: 'Load test' }
+          ]
+        },
+        {
+          title: 'アクセスログETLシステムのAWS Batch化',
+          date: '2017',
+          image: '',
+          url: '',
+          description:
+            'Jenkins(EC2), BigQueryで構築されているログ分析システムをAWS Batch, S3, Athenaに移行しました。',
+          skill: [
+            { text: 'AWS' },
+            { text: 'ShellScript' },
+            { text: 'Jenkins' },
+            { text: 'Docker' }
+          ]
         }
       ]
     }

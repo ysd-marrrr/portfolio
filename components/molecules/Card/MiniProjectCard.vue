@@ -89,10 +89,6 @@ export default {
   letter-spacing: 0.1rem;
 }
 
-.project-body {
-  height: 100%;
-}
-
 // タブレット以上の場合は横に複数枚並べる
 @media screen and (min-width: 801px) {
   .project-card {
