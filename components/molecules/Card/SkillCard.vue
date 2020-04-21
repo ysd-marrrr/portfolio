@@ -8,7 +8,9 @@
           </skill-icon>
         </div>
         <div class="column skill-card-right">
-          <mini-title><slot name="title">Sample Skill</slot></mini-title>
+          <middle-card-title
+            ><slot name="title">Sample Skill</slot></middle-card-title
+          >
           <mini-paragraph
             ><slot name="description">Skill description</slot></mini-paragraph
           >
@@ -20,13 +22,13 @@
 
 <script>
 import SkillIcon from '@/components/atoms/Icon/SkillIcon.vue'
-import MiniTitle from '@/components/atoms/Label/MiniTitle.vue'
+import MiddleCardTitle from '@/components/atoms/Label/MiddleCardTitle.vue'
 import MiniParagraph from '@/components/atoms/Paragraph/MiniParagraph.vue'
 
 export default {
   components: {
     SkillIcon,
-    MiniTitle,
+    MiddleCardTitle,
     MiniParagraph
   },
   props: {

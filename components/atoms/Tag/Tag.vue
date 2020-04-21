@@ -1,5 +1,7 @@
 <template>
-  <h3 :class="'mini-title' + customClassProp"><slot></slot></h3>
+  <li>
+    <span :class="'tag ' + customClassProp"><slot /></span>
+  </li>
 </template>
 
 <script>
@@ -14,10 +16,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h3 {
-  &.mini-title {
-    font-weight: bold;
-    font-size: 150%;
-  }
+li {
+  display: inline;
+  line-height: 2rem;
+  margin-right: 0.5rem;
 }
 </style>
