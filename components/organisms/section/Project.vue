@@ -63,7 +63,7 @@ export default {
         {
           title: 'portfolio',
           date: '2020',
-          image: '',
+          image: '/img/work-1.png',
           url: 'https://www.y-mix.dev/',
           description: 'My "prime" portfolio site.',
           skill: [
