@@ -6,8 +6,8 @@
           Skills
         </h2>
 
-        <div class="columns">
-          <div class="column">
+        <div class="columns is-multiline is-centered">
+          <div class="column is-4-widescreen is-6-desktop">
             <h3 class="skill-header">Web-Frontend</h3>
             <skill-card
               v-for="(item, index) in skillFrontend"
@@ -23,7 +23,7 @@
               >
             </skill-card>
           </div>
-          <div class="column">
+          <div class="column is-4-widescreen is-6-desktop">
             <h3 class="skill-header">Infrastructure</h3>
             <skill-card
               v-for="(item, index) in skillInfra"
@@ -39,7 +39,7 @@
               >
             </skill-card>
           </div>
-          <div class="column">
+          <div class="column is-4-widescreen is-6-desktop">
             <h3 class="skill-header">Backend/Others</h3>
             <skill-card
               v-for="(item, index) in skillOther"
