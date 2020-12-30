@@ -6,20 +6,20 @@ storiesOf('/atoms/Image/ProjectImage', module)
   .add(':has-image', () => ({
     components: { ProjectImage },
     template:
-      '<project-image :image-url-prop="\'https://placebear.com/640/480\'"/>'
+      '<project-image :image-url-prop="\'https://placebear.com/640/480\'"/>',
   }))
   .add(':no-image', () => ({
     components: { ProjectImage },
-    template: '<project-image />'
+    template: '<project-image />',
   }))
 
 storiesOf('/atoms/Image/MiniProjectImage', module)
   .add(':has-image', () => ({
     components: { MiniProjectImage },
     template:
-      '<mini-project-image :image-url-prop="\'https://placebear.com/640/480\'"/>'
+      '<mini-project-image :image-url-prop="\'https://placebear.com/640/480\'"/>',
   }))
   .add(':no-image', () => ({
     components: { MiniProjectImage },
-    template: '<mini-project-image />'
+    template: '<mini-project-image />',
   }))

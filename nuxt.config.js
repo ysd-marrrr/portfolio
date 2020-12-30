@@ -11,9 +11,9 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
-    ]
+        content: process.env.npm_package_description || '',
+      },
+    ],
   },
   /*
    ** Customize the progress-bar color
@@ -32,7 +32,7 @@ export default {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
   ],
   /*
    ** Nuxt.js modules
@@ -42,7 +42,7 @@ export default {
     '@nuxtjs/bulma',
     'nuxt-fontawesome',
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
   ],
   fontawesome: {
     imports: [
@@ -63,8 +63,8 @@ export default {
           'faPhp',
           'faTwitter',
           'faGithub',
-          'faSpeakerDeck'
-        ]
+          'faSpeakerDeck',
+        ],
       },
       {
         set: '@fortawesome/free-solid-svg-icons',
@@ -76,10 +76,10 @@ export default {
           'faDatabase',
           'faBirthdayCake',
           'faSearch',
-          'faScroll'
-        ]
-      }
-    ]
+          'faScroll',
+        ],
+      },
+    ],
   },
   /*
    ** Axios module configuration
@@ -93,13 +93,13 @@ export default {
     postcss: {
       preset: {
         features: {
-          customProperties: false
-        }
-      }
+          customProperties: false,
+        },
+      },
     },
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
-  }
+    extend(config, ctx) {},
+  },
 }

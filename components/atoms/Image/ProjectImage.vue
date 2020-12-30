@@ -16,16 +16,16 @@ export default {
   props: {
     imageUrlProp: {
       type: String,
-      default: ''
-    }
+      default: '',
+    },
   },
   computed: {
     projectImageStyle() {
       return {
-        '--project-image-url': 'url("' + this.imageUrlProp + '") 0 0 no-repeat'
+        '--project-image-url': 'url("' + this.imageUrlProp + '") 0 0 no-repeat',
       }
-    }
-  }
+    },
+  },
 }
 </script>
 

@@ -29,14 +29,14 @@ export default {
   components: {
     SkillIcon,
     MiddleCardTitle,
-    MiniParagraph
+    MiniParagraph,
   },
   props: {
     skillValueProp: {
       type: Number,
-      default: 0
-    }
-  }
+      default: 0,
+    },
+  },
 }
 </script>
 

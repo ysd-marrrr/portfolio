@@ -14,12 +14,12 @@
 import Tag from '@/components/atoms/Tag/Tag.vue'
 export default {
   components: {
-    Tag
+    Tag,
   },
   props: {
     customClassProp: {
       type: String,
-      default: ''
+      default: '',
     },
     tagListProp: {
       type: Array,
@@ -27,10 +27,10 @@ export default {
         return [
           { text: 'sample 1', style: 'is-info' },
           { text: 'sample 2', style: 'is-warning' },
-          { text: 'sample 3', style: 'is-danger' }
+          { text: 'sample 3', style: 'is-danger' },
         ]
-      }
-    }
+      },
+    },
   },
   computed: {
     tagList() {
@@ -40,8 +40,8 @@ export default {
         }
       })
       return this.tagListProp
-    }
-  }
+    },
+  },
 }
 </script>
 

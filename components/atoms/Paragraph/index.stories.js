@@ -16,5 +16,5 @@ storiesOf('/atoms/Paragraph/MiniParagraph', module).add('default', () => ({
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quisquam, ab, 
   voluptatibus quasi deserunt laudantium placeat voluptatum sit, natus eaque illo 
   odio quam corporis molestiae explicabo saepe nostrum labore eius!</p>
-  </mini-paragraph>`
+  </mini-paragraph>`,
 }))

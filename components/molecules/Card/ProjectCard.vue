@@ -32,20 +32,20 @@ import ProjectImage from '@/components/atoms/Image/ProjectImage.vue'
 export default {
   components: {
     TagList,
-    ProjectImage
+    ProjectImage,
   },
   props: {
     dateProp: {
       type: String,
-      default: '2020'
+      default: '2020',
     },
     urlProp: {
       type: String,
-      default: '#projects'
+      default: '#projects',
     },
     imageUrlProp: {
       type: String,
-      default: ''
+      default: '',
     },
     skillListProp: {
       type: Array,
@@ -54,10 +54,10 @@ export default {
           { text: 'Skill' },
           { text: 'Skill' },
           { text: 'Skill' },
-          { text: 'Skill' }
+          { text: 'Skill' },
         ]
-      }
-    }
+      },
+    },
   },
   computed: {
     projectDate() {
@@ -68,8 +68,8 @@ export default {
     },
     projectSkillList() {
       return this.skillListProp
-    }
-  }
+    },
+  },
 }
 </script>
 
