@@ -6,7 +6,7 @@
       :stroke-color="strokeColorProp"
       :stroke-width="6"
       ><span class="skill-icon"
-        ><slot><font-awesome-icon icon="times-circle"/></slot></span
+        ><slot><font-awesome-icon icon="times-circle" /></slot></span
     ></Progress>
   </div>
 </template>
@@ -15,22 +15,22 @@
 import Progress from 'easy-circular-progress'
 export default {
   components: {
-    Progress
+    Progress,
   },
   props: {
     progressValueProp: {
       type: Number,
-      default: 0
+      default: 0,
     },
     radiusProp: {
       type: Number,
-      default: 0
+      default: 0,
     },
     strokeColorProp: {
       type: String,
-      default: '#3A6BA5'
-    }
-  }
+      default: '#3A6BA5',
+    },
+  },
 }
 </script>
 

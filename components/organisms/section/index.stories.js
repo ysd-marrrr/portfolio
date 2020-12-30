@@ -6,20 +6,20 @@ import ProfileLink from '@/components/organisms/section/ProfileLink.vue'
 
 storiesOf('/organisms/section/Introduction', module).add('default', () => ({
   components: { Introduction },
-  template: '<introduction />'
+  template: '<introduction />',
 }))
 
 storiesOf('/organisms/section/Skill', module).add('default', () => ({
   components: { Skill },
-  template: '<skill />'
+  template: '<skill />',
 }))
 
 storiesOf('/organisms/section/Project', module).add('default', () => ({
   components: { Project },
-  template: '<project />'
+  template: '<project />',
 }))
 
 storiesOf('/organisms/section/ProfileLink', module).add('default', () => ({
   components: { ProfileLink },
-  template: '<profile-link />'
+  template: '<profile-link />',
 }))

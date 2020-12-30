@@ -14,9 +14,7 @@
           </div>
           <div class="columns is-mobile is-vcentered is-centered">
             <div class="column is-narrow">
-              <h1 class="title">
-                Masataka Yoshida
-              </h1>
+              <h1 class="title">Masataka Yoshida</h1>
             </div>
             <div class="column is-narrow">
               <p>y-mix (yoshida mix)</p>
@@ -47,8 +45,8 @@ export default {
     Introduction,
     Skill,
     Project,
-    ProfileLink
-  }
+    ProfileLink,
+  },
 }
 </script>
 

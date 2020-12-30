@@ -1,7 +1,7 @@
 <template>
   <li class="link-item">
     <a :href="linkAddressProp" target="_blank" class="link-icon">
-      <slot name="icon"><font-awesome-icon icon="times-circle"/></slot>
+      <slot name="icon"><font-awesome-icon icon="times-circle" /></slot>
     </a>
     <a :href="linkAddressProp" target="_blank" class="link-title">
       <slot name="title" />
@@ -14,9 +14,9 @@ export default {
   props: {
     linkAddressProp: {
       type: String,
-      default: '#'
-    }
-  }
+      default: '#',
+    },
+  },
 }
 </script>
 
