@@ -9,21 +9,21 @@ export default {
   props: {
     backgroundColorProp: {
       type: String,
-      default: '#DAE477'
+      default: '#DAE477',
     },
     textColorProp: {
       type: String,
-      default: 'black'
-    }
+      default: 'black',
+    },
   },
   computed: {
     balloonStyle() {
       return {
         '--background-color': this.backgroundColorProp,
-        '--text-color': this.textColorProp
+        '--text-color': this.textColorProp,
       }
-    }
-  }
+    },
+  },
 }
 </script>
 

@@ -18,23 +18,23 @@ const tagSample = [
   { text: 'Bootstrap' },
   { text: 'iOS(Objective-C)' },
   { text: 'Android(Java)' },
-  { text: 'Unity(JS, C#)' }
+  { text: 'Unity(JS, C#)' },
 ]
 
 storiesOf('/molecules/Card/SkillCard', module).add('default', () => ({
   components: { SkillCard },
-  template: '<skill-card />'
+  template: '<skill-card />',
 }))
 
 storiesOf('/molecules/Card/ProjectCard', module)
   .add(':has-image', () => ({
     components: { ProjectCard },
     template:
-      '<project-card :image-url-prop="\'https://placebear.com/640/480\'" />'
+      '<project-card :image-url-prop="\'https://placebear.com/640/480\'" />',
   }))
   .add(':no-image', () => ({
     components: { ProjectCard },
-    template: '<project-card />'
+    template: '<project-card />',
   }))
   .add(':has-long-item', () => ({
     components: { ProjectCard },
@@ -47,18 +47,18 @@ storiesOf('/molecules/Card/ProjectCard', module)
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quod iure natus magnam maxime omnis sequi quidem qui fugit, voluptas dolor earum aperiam doloribus accusamus possimus laboriosam voluptatibus. Laborum, consectetur.
         </template>
       </project-card>
-      `
+      `,
   }))
 
 storiesOf('/molecules/Card/MiniProjectCard', module)
   .add(':has-image', () => ({
     components: { MiniProjectCard },
     template:
-      '<mini-project-card :image-url-prop="\'https://placebear.com/640/480\'" />'
+      '<mini-project-card :image-url-prop="\'https://placebear.com/640/480\'" />',
   }))
   .add(':no-image', () => ({
     components: { MiniProjectCard },
-    template: '<mini-project-card />'
+    template: '<mini-project-card />',
   }))
   .add(':has-long-item', () => ({
     components: { MiniProjectCard },
@@ -71,5 +71,5 @@ storiesOf('/molecules/Card/MiniProjectCard', module)
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quod iure natus magnam maxime omnis sequi quidem qui fugit, voluptas dolor earum aperiam doloribus accusamus possimus laboriosam voluptatibus. Laborum, consectetur.
         </template>
       </mini-project-card>
-      `
+      `,
   }))

@@ -1,14 +1,10 @@
 <template>
   <section id="introduction" class="profile-section has-text-centered">
     <div class="container">
-      <h2 class="section-title">
-        Mission / Vision / Value
-      </h2>
+      <h2 class="section-title">Mission / Vision / Value</h2>
       <div class="columns is-vcentered">
         <div class="column is-half-widescreen is-8-fullhd">
-          <h3 class="main-message">
-            「みせること」で人々をハッピーにする
-          </h3>
+          <h3 class="main-message">「みせること」で人々をハッピーにする</h3>
           <div class="section-message">
             <p>
               仕事では自分の作業で物ができていくところを見るのが楽しいですし、自分の知識が問題にピッタリと合って解決するのが気持ち良いと感じています。<br />
@@ -50,8 +46,8 @@
 import StepsBalloon from '@/components/atoms/Balloon/StepsBalloon.vue'
 export default {
   components: {
-    StepsBalloon
-  }
+    StepsBalloon,
+  },
 }
 </script>
 

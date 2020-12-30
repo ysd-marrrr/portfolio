@@ -9,9 +9,9 @@ export default {
   props: {
     customClassProp: {
       type: String,
-      default: ''
-    }
-  }
+      default: '',
+    },
+  },
 }
 </script>
 

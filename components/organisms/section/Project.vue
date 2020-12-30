@@ -2,9 +2,7 @@
   <section id="project" class="profile-section has-text-centered">
     <div class="hero-body">
       <div class="container">
-        <h2 class="section-title">
-          Projects
-        </h2>
+        <h2 class="section-title">Projects</h2>
         <div class="project-area personal-projects">
           <project-card
             v-for="(item, index) in personalProjects"
@@ -14,8 +12,8 @@
             :image-url-prop="item.image"
             :skill-list-prop="item.skill"
           >
-            <template v-slot:title>{{ item.title }}</template>
-            <template v-slot:description>{{ item.description }}</template>
+            <template #title>{{ item.title }}</template>
+            <template #description>{{ item.description }}</template>
           </project-card>
         </div>
         <hr class="inner-divider" />
@@ -28,14 +26,12 @@
             :image-url-prop="item.image"
             :skill-list-prop="item.skill"
           >
-            <template v-slot:title>{{ item.title }}</template>
-            <template v-slot:description>{{ item.description }}</template>
+            <template #title>{{ item.title }}</template>
+            <template #description>{{ item.description }}</template>
           </mini-project-card>
         </div>
         <div v-if="isTruncated" class="project-and-more">
-          <p class="section-note">
-            &gt;&gt; PAST PROJECTS
-          </p>
+          <p class="section-note">&gt;&gt; PAST PROJECTS</p>
         </div>
       </div>
     </div>
@@ -58,7 +54,7 @@ export default {
           image: '',
           url: '#',
           description: 'Now Developing...',
-          skill: [{ text: 'Nuxt.js' }, { text: 'Firebase' }]
+          skill: [{ text: 'Nuxt.js' }, { text: 'Firebase' }],
         },
         {
           title: 'portfolio',
@@ -71,9 +67,9 @@ export default {
             { text: 'Atomic Design' },
             { text: 'SCSS' },
             { text: 'Bulma' },
-            { text: 'Netlify' }
-          ]
-        }
+            { text: 'Netlify' },
+          ],
+        },
       ],
       otherProjects: [
         {
@@ -91,8 +87,8 @@ export default {
             { text: 'MySQL' },
             { text: 'SpringBoot' },
             { text: 'Elasticsearch' },
-            { text: 'Logstash' }
-          ]
+            { text: 'Logstash' },
+          ],
         },
         {
           title: 'ピクセルトラッキングシステムのサーバーレス化',
@@ -107,8 +103,8 @@ export default {
             { text: 'Apache' },
             { text: 'nginx' },
             { text: 'Docker' },
-            { text: 'Load test' }
-          ]
+            { text: 'Load test' },
+          ],
         },
         {
           title: 'アクセスログETLシステムのAWS Batch化',
@@ -121,12 +117,12 @@ export default {
             { text: 'AWS' },
             { text: 'ShellScript' },
             { text: 'Jenkins' },
-            { text: 'Docker' }
-          ]
-        }
-      ]
+            { text: 'Docker' },
+          ],
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 

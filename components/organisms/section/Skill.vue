@@ -2,9 +2,7 @@
   <section id="skill" class="profile-section has-text-centered">
     <div class="hero-body">
       <div class="container">
-        <h2 class="section-title">
-          Skills
-        </h2>
+        <h2 class="section-title">Skills</h2>
 
         <div class="columns is-multiline is-centered">
           <div class="column is-4-widescreen is-6-desktop">
@@ -14,11 +12,11 @@
               :key="index"
               :skill-value-prop="item.level"
             >
-              <template v-slot:icon
+              <template #icon
                 ><font-awesome-icon :icon="item.faIcons"
               /></template>
-              <template v-slot:title>{{ item.name }}</template>
-              <template v-slot:description
+              <template #title>{{ item.name }}</template>
+              <template #description
                 ><p>{{ item.description }}</p></template
               >
             </skill-card>
@@ -30,11 +28,11 @@
               :key="index"
               :skill-value-prop="item.level"
             >
-              <template v-slot:icon
+              <template #icon
                 ><font-awesome-icon :icon="item.faIcons"
               /></template>
-              <template v-slot:title>{{ item.name }}</template>
-              <template v-slot:description
+              <template #title>{{ item.name }}</template>
+              <template #description
                 ><p>{{ item.description }}</p></template
               >
             </skill-card>
@@ -46,11 +44,11 @@
               :key="index"
               :skill-value-prop="item.level"
             >
-              <template v-slot:icon
+              <template #icon
                 ><font-awesome-icon :icon="item.faIcons"
               /></template>
-              <template v-slot:title>{{ item.name }}</template>
-              <template v-slot:description
+              <template #title>{{ item.name }}</template>
+              <template #description
                 ><p>{{ item.description }}</p></template
               >
             </skill-card>
@@ -78,7 +76,7 @@ import TagList from '@/components/molecules/TagList/TagList.vue'
 export default {
   components: {
     SkillCard,
-    TagList
+    TagList,
   },
   data() {
     return {
@@ -88,42 +86,42 @@ export default {
           description:
             'computed, props, v-for, 単一ファイルコンポーネント, slot(multiple)できる、アニメーションはまだ…',
           level: 60,
-          faIcons: ['fab', 'vuejs']
+          faIcons: ['fab', 'vuejs'],
         },
         {
           name: 'Nuxt.js',
           description:
             'SPA, Atomic Designで構築できる。Vuex使うならこれを導入している',
           level: 60,
-          faIcons: ['fab', 'vuejs']
+          faIcons: ['fab', 'vuejs'],
         },
         {
           name: 'HTML/CSS',
           description:
             'FloatからFlexboxまで(フレームワークに頼りがち)。アニメーションとKeyframeやらないとな…',
           level: 70,
-          faIcons: ['fab', 'html5']
+          faIcons: ['fab', 'html5'],
         },
         {
           name: 'ECMAScript6',
           description: 'ES6といえばSetをつかい始めたばかり',
           level: 40,
-          faIcons: ['fab', 'js-square']
+          faIcons: ['fab', 'js-square'],
         },
         {
           name: 'Node.js/npm scripts',
           description:
             'package.jsonのscriptsを定義したり、dev/prodを切り替えたりExpressで簡単にサーバーを立ち上げたり',
           level: 50,
-          faIcons: ['fab', 'node-js']
+          faIcons: ['fab', 'node-js'],
         },
         {
           name: 'Webpack',
           description:
             'dev/prodを切り替えたり、Storybook用にWebpackの設定を書いたり。まだまだloaderについて謎なところがある。',
           level: 40,
-          faIcons: ['fab', 'node-js']
-        }
+          faIcons: ['fab', 'node-js'],
+        },
       ],
       skillInfra: [
         {
@@ -131,46 +129,46 @@ export default {
           description:
             'EC2, VPC, ECS, ECR, Route53, SES, Lambda, Kinesis, S3, CloudFront, API Gateway, Batch, Glue, Athena',
           level: 50,
-          faIcons: ['fab', 'aws']
+          faIcons: ['fab', 'aws'],
         },
         {
           name: 'Firebase',
           description: 'Authentication, Cloud Firestoreをさらっと',
           level: 50,
-          faIcons: ['fas', 'fire']
+          faIcons: ['fas', 'fire'],
         },
         {
           name: 'Docker',
           description: 'Dockerイメージ作成からdocker-composeまで',
           level: 50,
-          faIcons: ['fab', 'docker']
+          faIcons: ['fab', 'docker'],
         },
         {
           name: 'Vagrant',
           description:
             'マシンのストレージを拡張したり、provisioning用にスクリプトを入れたり',
           level: 70,
-          faIcons: ['fas', 'laptop-code']
+          faIcons: ['fas', 'laptop-code'],
         },
         {
           name: 'Mac',
           description: 'メインの開発機で触っています',
           level: 70,
-          faIcons: ['fab', 'apple']
+          faIcons: ['fab', 'apple'],
         },
         {
           name: 'Linux',
           description:
             'CentOS, Ubuntu, Amazon LinuxでWebサーバーを立ち上げたり。大学ではサーバーの立ち上げ方を教えていました。',
           level: 70,
-          faIcons: ['fab', 'centos']
+          faIcons: ['fab', 'centos'],
         },
         {
           name: 'Windows',
           description: 'Windows 95-10。WSL2を試すのにWindows 10 Proがほしい。',
           level: 70,
-          faIcons: ['fab', 'windows']
-        }
+          faIcons: ['fab', 'windows'],
+        },
       ],
       skillOther: [
         {
@@ -178,48 +176,48 @@ export default {
           description:
             '日々の作業からAWSの操作(Boto3)まで、ほとんどお世話になっています。最近になってyieldが使えるようになった。',
           level: 70,
-          faIcons: ['fab', 'python']
+          faIcons: ['fab', 'python'],
         },
         {
           name: 'Ruby',
           description:
             'LogstashのRubyフィルターを書いたり、Chefのレシピを書いたり',
           level: 40,
-          faIcons: ['fas', 'gem']
+          faIcons: ['fas', 'gem'],
         },
         {
           name: 'Java',
           description:
             'Interfaceで最低限実装してほしいメソッドを定義したり、Streamで処理したり',
           level: 50,
-          faIcons: ['fab', 'java']
+          faIcons: ['fab', 'java'],
         },
         {
           name: 'SpringBoot',
           description: 'DIでElasticsearchとつなげたり',
           level: 50,
-          faIcons: ['fab', 'java']
+          faIcons: ['fab', 'java'],
         },
         {
           name: 'Elasticsearch/Logstash',
           description:
             'shard数を決定してindexを設計したり、Twitter inputでTwitterのつぶやきを取り込んだり',
           level: 60,
-          faIcons: ['fas', 'database']
+          faIcons: ['fas', 'database'],
         },
         {
           name: 'PHP',
           description: 'Web開発を始めた頃はこれだったけど、最近触れていない…',
           level: 40,
-          faIcons: ['fab', 'php']
+          faIcons: ['fab', 'php'],
         },
         {
           name: 'CakePHP',
           description:
             'CakePHP 2系。MVC, Authコンポーネントを触ってシステム開発した。',
           level: 40,
-          faIcons: ['fas', 'birthday-cake']
-        }
+          faIcons: ['fas', 'birthday-cake'],
+        },
       ],
       skillAndMore: [
         { text: 'Go' },
@@ -236,10 +234,10 @@ export default {
         { text: 'Bootstrap' },
         { text: 'iOS(Objective-C)' },
         { text: 'Android(Java)' },
-        { text: 'Unity(JS, C#)' }
-      ]
+        { text: 'Unity(JS, C#)' },
+      ],
     }
-  }
+  },
 }
 </script>
 
