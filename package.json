@@ -29,7 +29,7 @@
     "@fortawesome/vue-fontawesome": "^2.0.2",
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/bulma": "^1.2.1",
-    "core-js": "3.8.1",
+    "core-js": "3.8.2",
     "easy-circular-progress": "^1.0.4",
     "minimist": "^1.2.5",
     "nuxt": "^2.0.0",
